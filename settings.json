@@ -1,0 +1,17 @@
+
+{
+   "settings": [
+      {
+         "min_qty": 1,
+         "allowedCommand": ["!AltTab"]
+      },
+      {
+         "min_qty": 5,
+         "allowedCommand": ["!AltTab", "!throwGun", "!knifeOnly"]
+      },
+      {
+         "min_qty": 10,
+         "allowedCommand": ["!AltTab", "!throwGun", "!knifeOnly", "!AltF4"]
+      }
+   ]
+}

@@ -1,0 +1,35 @@
+<script src="https://assets.trakteer.id/js/trws.min.js"></script>
+<script src="config.js"></script>
+<script>
+  // Get your channel ID in https://trakteer.id/manage/webhook/websocket
+  const uri = 'ws://localhost:8000';
+  const socket = new WebSocket(uri);
+
+  // Register Creator Channel ID
+  TrakteerWS.register(channelID);
+
+  // Function to handle on stream test notification event
+  TrakteerWS.onStreamTest = (data) => {
+    if (!isOpen(socket)) return;
+    socket.send(JSON.stringify(data));
+    window.location.reload();
+  };
+
+  // Function to handle on new traktiran notification event
+  TrakteerWS.onNewTipSuccess = (data) => {
+    if (!isOpen(socket)) return;
+    socket.send(JSON.stringify(data));
+    window.location.reload();
+  };
+
+  // if ( socket.readyState === 3 ) {
+  //   socket.close();
+  //   socket = new WebSocket('ws://localhost:8000');
+
+  //   // wait until new connection is open
+  //   while (socket.readyState !== 1) {
+  //     await new Promise(r => setTimeout(r, 250));
+  //   }
+  //  }
+  function isOpen(ws) { return ws.readyState === ws.OPEN }
+</script>
