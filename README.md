@@ -9,16 +9,21 @@ Trakteer Hotkeys aplikasi untuk berinteraksi dengan *Keyboard Shortcut / Hotkeys
 ## Prerequisites
 - Python 3.12.4 (latest version)
 - Websocket
-Setelah menginstall Python, buka CMD atau Powershell lalu ketik command berikut :
-`pip install websockets`
+
+  Setelah menginstall Python, buka CMD atau Powershell lalu ketik command berikut :
+
+  `pip install websockets`
 - Browser
 
 ## Installation
 - Buka https://trakteer.id/manage/webhook/websocket untuk mendapatkan Channel ID
 - Clone Repo
-` Git Clone https://github.com/anandac16/trakteer-hotkeys.git`
-Setelah clone repo / download files, buka config.js. Lalu isi channelID dengan Channel ID dari trakteer
-` const channelID = ''; `
+
+  ` Git Clone https://github.com/anandac16/trakteer-hotkeys.git`
+
+  Setelah clone repo / download files, buka config.js. Lalu isi channelID dengan Channel ID dari trakteer
+  
+  ` const channelID = ''; `
 ---
 ### Setting & Command
 Kalian dapat mengubah setting untuk *min qty* dan *allowed command* di file **Settings.json**
@@ -46,7 +51,9 @@ Kalian bisa membuat fungsi sendiri di file main.py
 ---
 ## Referensi
 [rmdwirizki/trws-js.example.html](https://gist.github.com/rmdwirizki/1d4cd9c8daadf74d2cdf72af2b97d8e5#file-trws-js-example-html)
+
 [How To Build WebSocket Server And Client in Python](https://piehost.com/websocket/python-websocket)
+
 [How to make Keyboard Event](https://stackoverflow.com/a/13615802)
 
 ---
