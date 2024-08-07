@@ -55,6 +55,8 @@ Kalian bisa membuat fungsi sendiri di file main.py
 
 Untuk menjalankan program, buka / double click file **start.bat**. Pastikan kalian sudah mengisi channelID di file config.js.
 
+Untuk menjalankan command, ketik command di pesan donasi. Command akan berjalan jika Qty >= min_qty yang ada di Settings.json dan ada di list allowedCommand.
+
 
 ---
 ## Referensi

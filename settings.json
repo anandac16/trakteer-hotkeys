@@ -3,15 +3,15 @@
    "settings": [
       {
          "min_qty": 1,
-         "allowedCommand": ["!AltTab"]
+         "allowedCommand": ["!AltTab", "!throwGun"]
       },
       {
          "min_qty": 5,
-         "allowedCommand": ["!AltTab", "!throwGun", "!knifeOnly"]
+         "allowedCommand": ["!AltTab", "!throwGun", "!knifeOnly", "!knifeOnly5Sec", "!throwGun5Sec"]
       },
       {
          "min_qty": 10,
-         "allowedCommand": ["!AltTab", "!throwGun", "!knifeOnly", "!AltF4"]
+         "allowedCommand": ["!AltTab", "!throwGun", "!knifeOnly", "!AltF4", "!knifeOnly5Sec", "!throwGun5Sec"]
       }
    ]
 }
