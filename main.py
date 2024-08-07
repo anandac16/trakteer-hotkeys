@@ -139,20 +139,35 @@ def throwGun():
     PressKey(VK_G)
     ReleaseKey(VK_G)
 
+def throwGun5Sec():
+    print("Pressing G for 5 seconds...")
+    for i in range(0,5):
+        PressKey(VK_G)
+        ReleaseKey(VK_G)
+        time.sleep(1)
+
 def knifeOnly():
     PressKey(VK_3)
-    time.sleep(5)
     ReleaseKey(VK_3)
+
+def knifeOnly5Sec():
+    print("Pressing 3 for 5 seconds...")
+    for i in range(0,5):
+        PressKey(VK_3)
+        ReleaseKey(VK_3)
+        time.sleep(1)
 
 def runCmd(cmd):
     if cmd == "!AltTab":
         return AltTab()
     elif cmd == "!throwGun":
         return throwGun()
+    elif cmd == "!throwGun5Sec":
+        return throwGun5Sec()
     elif cmd == "!knifeOnly":
         return knifeOnly()
-    elif cmd == "Selalu Berkarya!":
-        return throwGun()
+    elif cmd == "!knifeOnly5Sec":
+        return knifeOnly5Sec()
+    elif cmd == "Selalu Berkarya!": # for testing
+        return AltTab()
 
-if __name__ == "__main__":
-    AltTab()

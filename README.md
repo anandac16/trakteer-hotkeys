@@ -3,7 +3,7 @@
 ---
 Trakteer Hotkeys aplikasi untuk berinteraksi dengan *Keyboard Shortcut / Hotkeys* saat mendapat donasi dari trakteer.
 
-==Ini adalah aplikasi *Unofficial*==
+** Ini adalah aplikasi *Unofficial* **
 
 ---
 ## Prerequisites
@@ -22,7 +22,7 @@ Trakteer Hotkeys aplikasi untuk berinteraksi dengan *Keyboard Shortcut / Hotkeys
   ` Git Clone https://github.com/anandac16/trakteer-hotkeys.git`
 
   Setelah clone repo / download files, buka config.js. Lalu isi channelID dengan Channel ID dari trakteer
-  
+
   ` const channelID = ''; `
 ---
 ### Setting & Command
@@ -43,10 +43,18 @@ Ini adalah list Command yang tersedia saat ini. Jika ingin request untuk menamba
 | ----------- | ----------- |
 | !AltTab | Fungsi Alt + Tab |
 | !throwGun | Fungsi tombol "G" (Untuk melempar senjata di Valorant / CS2) |
-| !knifeOnly | Fungsi tombol "3" (Untuk memegang knife di Valorant / CS2) selama 5 detik |
+| !throwGun5Sec | Fungsi tombol "G" (Untuk melempar senjata di Valorant / CS2) selama 5 detik |
+| !knifeOnly | Fungsi tombol "3" (Untuk memegang knife di Valorant / CS2) |
+| !knifeOnly5Sec | Fungsi tombol "3" (Untuk memegang knife di Valorant / CS2) selama 5 detik |
 | !AltF4 | Fungsi Alt + F4 |
 
 Kalian bisa membuat fungsi sendiri di file main.py
+
+
+## Start the Program!
+
+Untuk menjalankan program, buka / double click file **start.bat**. Pastikan kalian sudah mengisi channelID di file config.js.
+
 
 ---
 ## Referensi
@@ -68,6 +76,8 @@ MIT
 ## Me
 Ini hanyalah project iseng-iseng dari seorang *Script Kiddies* yang mostly ngoding pake PHP. Jadi, maaf kalau ngeliat kodingannya kurang rapih karena ini literally my first time using Python :3
 But any support is appreciated!
+
 [Trakteer](https://trakteer.id/achanch)
+
 [twitter/X](https://x.com/achandesu_)
 
