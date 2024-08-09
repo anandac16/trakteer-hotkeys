@@ -15,8 +15,9 @@ async def handler(websocket, path):
    data = json.load(f)
    for i in data['settings']:
       if qty >= i['min_qty']:
-        if msg in i['allowedCommand']:
-            main.runCmd(msg)
+         for x in i['allowedCommand']:
+            if x.lower() in msg.lower():  # biar bisa tambah pesan lain
+               main.runCmd(x)
    print(reply)
    await websocket.send(reply)
 

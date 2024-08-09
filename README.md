@@ -5,6 +5,8 @@ Trakteer Hotkeys aplikasi untuk berinteraksi dengan *Keyboard Shortcut / Hotkeys
 
 ** Ini adalah aplikasi *Unofficial* **
 
+Note : Aplikasi ini tidak terbatas hanya untuk Valorant saja. Kalian bisa mengaplikasikannya untuk mentrigger apapun (seperti Obs, Vtube Studio, Dll)
+
 ---
 ## Prerequisites
 - Python 3.12.4 (latest version)
@@ -47,6 +49,11 @@ Ini adalah list Command yang tersedia saat ini. Jika ingin request untuk menamba
 | !knifeOnly | Fungsi tombol "3" (Untuk memegang knife di Valorant / CS2) |
 | !knifeOnly5Sec | Fungsi tombol "3" (Untuk memegang knife di Valorant / CS2) selama 5 detik |
 | !AltF4 | Fungsi Alt + F4 |
+| !useUltimate | Fungsi tombol "X" dan "Z" (Ultimate di Valorant & Apex Legends) |
+| !jumpingJack | Fungsi "Spacebar" (Untuk lompat selama 5 detik) |
+| !teaBag | Fungsi "Left Control" (Spam CTRL untuk crouch) |
+| !crouchOnly | Fungsi Hold "Left Control" (Menahan CTRL selama 5 detik) |
+| !moonWalk | Fungsi tombol "S" dan melepas tombol "WAD" selama 5 detik |
 
 Kalian bisa membuat fungsi sendiri di file main.py
 

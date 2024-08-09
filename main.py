@@ -53,6 +53,8 @@ VK_Y = 0x59
 VK_Z = 0x5A
 VK_LWIN = 0x5B
 VK_F4 = 0x73
+VK_SPACE = 0x20
+VK_LCONTROL = 0xA2
 # C struct definitions
 
 wintypes.ULONG_PTR = wintypes.WPARAM
@@ -130,10 +132,12 @@ def AltTab():
     ReleaseKey(VK_MENU) # Alt~
 
 def AltF4():
-    PressKey(VK_MENU)
-    PressKey(VK_F4)
-    ReleaseKey(VK_MENU)
-    ReleaseKey(VK_F4)
+    for i in range(0, 2):   # force ALT+F4 buat yg ada exit confirmation kayak valo xd
+        PressKey(VK_MENU)
+        PressKey(VK_F4)
+        time.sleep(0.2)
+        ReleaseKey(VK_MENU)
+        ReleaseKey(VK_F4)
 
 def throwGun():
     PressKey(VK_G)
@@ -157,17 +161,64 @@ def knifeOnly5Sec():
         ReleaseKey(VK_3)
         time.sleep(1)
 
+def useUltimate():
+    PressKey(VK_X)
+    ReleaseKey(VK_X)
+    PressKey(VK_Z)
+    ReleaseKey(VK_Z)
+
+def jumpingJack():
+    print("Pressing Space for 5 seconds...")
+    for i in range(0,5):
+        PressKey(VK_SPACE)
+        ReleaseKey(VK_SPACE)
+        time.sleep(1)
+
+def teaBag():
+    print("Pressing ctrl for 5 seconds")
+    for i in range(0,5):
+        PressKey(VK_LCONTROL)
+        time.sleep(0.2)
+        ReleaseKey(VK_LCONTROL)
+        time.sleep(0.5)
+
+def crouchOnly():
+    print("Pressing ctrl for 5 seconds")
+    for i in range(0,5):
+        PressKey(VK_LCONTROL)
+        time.sleep(1)
+    ReleaseKey(VK_LCONTROL)
+
+def moonWalk():
+    print("Pressing S for 5 seconds")
+    for i in range(0,10):
+        ReleaseKey(VK_W)
+        ReleaseKey(VK_A)
+        ReleaseKey(VK_D)
+        PressKey(VK_S)
+        time.sleep(0.5)
+    ReleaseKey(VK_S)
+
 def runCmd(cmd):
-    if cmd == "!AltTab":
+    cmd = cmd.lower()
+    if cmd == "!AltTab".lower():
         return AltTab()
-    elif cmd == "!throwGun":
+    elif cmd == "!throwGun".lower():
         return throwGun()
-    elif cmd == "!throwGun5Sec":
+    elif cmd == "!throwGun5Sec".lower():
         return throwGun5Sec()
-    elif cmd == "!knifeOnly":
+    elif cmd == "!knifeOnly".lower():
         return knifeOnly()
-    elif cmd == "!knifeOnly5Sec":
+    elif cmd == "!knifeOnly5Sec".lower():
         return knifeOnly5Sec()
-    elif cmd == "Selalu Berkarya!": # for testing
+    elif cmd == "Selalu Berkarya!".lower(): # for testing
         return AltTab()
+    elif cmd == "!jumpingJack".lower():
+        return jumpingJack()
+    elif cmd == "!crouchOnly".lower():
+        return crouchOnly()
+    elif cmd == "!teaBag".lower():
+        return teaBag()
+    elif cmd == "!moonWalk".lower():
+        return moonWalk()
 
